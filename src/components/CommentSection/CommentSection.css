@@ -1,0 +1,87 @@
+.comment-section {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 24px 0;
+}
+
+.comment-section__header {
+  margin-bottom: 24px;
+}
+
+.comment-section__title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1f2937;
+  margin: 0;
+}
+
+.comment-section__list {
+  margin-bottom: 32px;
+}
+
+.comment-section__input {
+  padding: 24px 0;
+  border-top: 2px solid #e5e7eb;
+}
+
+.comment-section__input-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #374151;
+  margin: 0 0 16px 0;
+}
+
+/* Login Prompt */
+.comment-section__login-prompt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 24px;
+  background-color: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.comment-section__login-text {
+  margin: 0 0 16px 0;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.comment-section__login-button {
+  padding: 10px 24px;
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.comment-section__login-button:hover {
+  background-color: #2563eb;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .comment-section {
+    padding: 16px 0;
+  }
+
+  .comment-section__title {
+    font-size: 20px;
+  }
+
+  .comment-section__input-title {
+    font-size: 15px;
+  }
+
+  .comment-section__login-prompt {
+    padding: 32px 16px;
+  }
+}
