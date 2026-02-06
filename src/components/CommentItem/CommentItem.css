@@ -1,0 +1,238 @@
+.comment-item {
+  position: relative;
+  width: 100%;
+  padding: 16px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.comment-item--reply {
+  margin-left: 48px;
+  padding-left: 16px;
+  border-left: 2px solid #e5e7eb;
+}
+
+.comment-item__container {
+  display: flex;
+  gap: 12px;
+}
+
+.comment-item__avatar {
+  flex-shrink: 0;
+}
+
+.comment-item__avatar-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.comment-item__content {
+  flex: 1;
+  min-width: 0;
+}
+
+.comment-item__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 8px;
+}
+
+.comment-item__author-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.comment-item__nickname {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.comment-item__timestamp {
+  font-size: 13px;
+  color: #6b7280;
+  cursor: help;
+}
+
+.comment-item__edited-badge {
+  font-size: 12px;
+  color: #9ca3af;
+  font-style: italic;
+}
+
+.comment-item__menu-wrapper {
+  position: relative;
+}
+
+.comment-item__menu-button {
+  padding: 4px 8px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #6b7280;
+  font-size: 18px;
+  line-height: 1;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.comment-item__menu-button:hover {
+  background-color: #f3f4f6;
+}
+
+.comment-item__menu-icon {
+  display: block;
+  transform: rotate(90deg);
+}
+
+.comment-item__menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  margin-top: 4px;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  z-index: 10;
+  min-width: 100px;
+  overflow: hidden;
+}
+
+.comment-item__menu-item {
+  display: block;
+  width: 100%;
+  padding: 10px 16px;
+  background: none;
+  border: none;
+  text-align: left;
+  font-size: 14px;
+  color: #374151;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.comment-item__menu-item:hover {
+  background-color: #f9fafb;
+}
+
+.comment-item__menu-item--danger {
+  color: #dc2626;
+}
+
+.comment-item__menu-item--danger:hover {
+  background-color: #fef2f2;
+}
+
+.comment-item__text {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #374151;
+  margin: 0 0 12px 0;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.comment-item__reply-button {
+  padding: 4px 12px;
+  background: none;
+  border: none;
+  color: #3b82f6;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+
+.comment-item__reply-button:hover {
+  background-color: #eff6ff;
+  color: #2563eb;
+}
+
+.comment-item__edit-mode {
+  margin-top: 8px;
+}
+
+.comment-item__delete-confirm {
+  margin-top: 12px;
+  padding: 16px;
+  background-color: #fef2f2;
+  border: 1px solid #fecaca;
+  border-radius: 8px;
+}
+
+.comment-item__delete-confirm-text {
+  margin: 0 0 12px 0;
+  font-size: 14px;
+  color: #991b1b;
+}
+
+.comment-item__delete-confirm-actions {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+}
+
+.comment-item__delete-confirm-button {
+  padding: 6px 16px;
+  border: none;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.comment-item__delete-confirm-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.comment-item__delete-confirm-button--cancel {
+  background-color: white;
+  border: 1px solid #d1d5db;
+  color: #374151;
+}
+
+.comment-item__delete-confirm-button--cancel:hover:not(:disabled) {
+  background-color: #f9fafb;
+}
+
+.comment-item__delete-confirm-button--delete {
+  background-color: #dc2626;
+  color: white;
+}
+
+.comment-item__delete-confirm-button--delete:hover:not(:disabled) {
+  background-color: #b91c1c;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .comment-item--reply {
+    margin-left: 32px;
+    padding-left: 12px;
+  }
+
+  .comment-item__avatar-img {
+    width: 32px;
+    height: 32px;
+  }
+
+  .comment-item__nickname {
+    font-size: 13px;
+  }
+
+  .comment-item__timestamp {
+    font-size: 12px;
+  }
+
+  .comment-item__text {
+    font-size: 13px;
+  }
+}

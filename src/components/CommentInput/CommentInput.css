@@ -1,0 +1,122 @@
+.comment-input {
+  width: 100%;
+}
+
+.comment-input--reply {
+  margin-left: 48px;
+  margin-top: 12px;
+}
+
+.comment-input__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.comment-input__textarea {
+  width: 100%;
+  min-height: 100px;
+  padding: 12px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 1.5;
+  resize: vertical;
+  transition: border-color 0.2s;
+}
+
+.comment-input__textarea:focus {
+  outline: none;
+  border-color: #3b82f6;
+}
+
+.comment-input__textarea:disabled {
+  background-color: #f5f5f5;
+  cursor: not-allowed;
+}
+
+.comment-input__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.comment-input__counter {
+  font-size: 13px;
+  color: #666;
+}
+
+.comment-input__counter-text--warning {
+  color: #f59e0b;
+  font-weight: 500;
+}
+
+.comment-input__counter-text--error {
+  color: #ef4444;
+  font-weight: 600;
+}
+
+.comment-input__actions {
+  display: flex;
+  gap: 8px;
+}
+
+.comment-input__button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.comment-input__button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.comment-input__button--cancel {
+  background-color: #f3f4f6;
+  color: #374151;
+}
+
+.comment-input__button--cancel:hover:not(:disabled) {
+  background-color: #e5e7eb;
+}
+
+.comment-input__button--submit {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.comment-input__button--submit:hover:not(:disabled) {
+  background-color: #2563eb;
+}
+
+.comment-input__error {
+  padding: 8px 12px;
+  background-color: #fef2f2;
+  border: 1px solid #fecaca;
+  border-radius: 6px;
+  color: #dc2626;
+  font-size: 13px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .comment-input--reply {
+    margin-left: 32px;
+  }
+
+  .comment-input__textarea {
+    min-height: 80px;
+    font-size: 13px;
+  }
+
+  .comment-input__button {
+    padding: 6px 12px;
+    font-size: 13px;
+  }
+}
